@@ -1,0 +1,31 @@
+<!--
+============================================
+; Title: NodeQuiz, LLC.
+; Author: Jason Sullenger
+; Date: 25 September 2019
+; Description: Presentation and quiz site - MEAN stack
+;===========================================
+-->
+
+<div class="container">
+  <mat-card class="form">
+    <mat-card-content class="">
+      <div *ngIf="user">
+        <h3>Welcome back, {{ user.userName }}!</h3>
+      </div>
+      <h4>Please select your topic:</h4>
+      <div class="buttonGroup">
+        <div *ngFor="let quiz of quizzes">
+          <button
+            class="buttonStyle"
+            mat-raised-button
+            color="accent"
+            routerLink="presentation/{{ quiz.id }}"
+          >
+            {{ quiz.name }}
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

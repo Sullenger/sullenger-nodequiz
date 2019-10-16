@@ -1,0 +1,31 @@
+/*
+============================================
+; Title: NodeQuiz, LLC.
+; Author: Jason Sullenger
+; Date: 25 September 2019
+; Description: Presentation and quiz site - MEAN stack
+;===========================================
+*/
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 40%;
+}
+
+.form {
+  height: 300px;
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+small {
+  color: red;
+  display: block;
+  width: 100%;
+  min-width: 100% !important;
+  margin-top: 10px;
+}
+.inputStyle {
+  margin-top: 50px;
+}
